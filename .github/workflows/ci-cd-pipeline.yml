@@ -3,7 +3,8 @@ name: FOSSBilling CI/CD Pipeline
 on:
   push:
     branches:
-      - dev  # Trigger the pipeline on pushes to the "main" branch
+      - dev
+      - main  # Trigger the pipeline on pushes to the "main" branch
   pull_request:
     branches:
       - main  # Trigger the pipeline on pull requests to the "main" branch
