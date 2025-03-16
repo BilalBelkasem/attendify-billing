@@ -16,6 +16,16 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+      
+      - name: "Debug: Docker"
+        run: docker info
+      - name: "Debug: System Info"
+        run: |
+          whoami
+          groups
+          hostname
+          pwd
+          ls
 
       - name: Build Docker Image for FOSSBilling
         run: |
