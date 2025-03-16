@@ -19,7 +19,7 @@ jobs:
 
       - name: Build Docker Image for FOSSBilling
         run: |
-          docker build -t fossbilling-app .
+          docker compose up --build
 
       - name: Run Tests
         run: |
